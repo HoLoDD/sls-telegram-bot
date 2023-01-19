@@ -1,0 +1,22 @@
+{
+  "name": "serverless-bot",
+  "version": "1.0.0",
+  "description": "Make a serverless telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js dev",
+    "debug": "nodemon index.js dev",
+    "deploy": "serverless deploy",
+    "setHook": "node ./hooks/setWebhook",
+    "delHook": "node ./hooks/deleteWebhook"
+  },
+  "author": "duckyb",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "serverless": "^3.26.0"
+  }
+}
